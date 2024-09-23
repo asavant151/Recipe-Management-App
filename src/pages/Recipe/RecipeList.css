@@ -1,0 +1,395 @@
+.account-bubble {
+  display: inline-block;
+  width: 10em;
+  height: 10em;
+  margin: 1em 0.33em;
+  border: 0.5em solid #dadada;
+  border-radius: 6em;
+  position: relative;
+  font-size: 0.9375rem;
+  cursor: pointer;
+  transition: all 600ms ease, opacity 1ms;
+  transition-delay: 0s;
+  background: #fff;
+  color: #4a4a4a;
+}
+
+.account-bubble {
+  text-align: center;
+}
+
+.account-bubble.type-image {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 0.5em;
+}
+
+.onboarding-bubble .account-bubble {
+  font-size: 12px;
+  margin: 1em 0.75em;
+}
+
+.onboarding-bubble .account-bubble.type-image {
+  background: transparent;
+}
+
+.onboarding-bubble .account-bubble.bubble-cuisines .bubble-image {
+  transition: opacity 400ms ease;
+}
+
+.account-bubble.type-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 6em;
+  z-index: 0;
+}
+
+.account-bubble .bubble-text {
+  position: absolute;
+  top: 17%;
+  right: 0;
+  bottom: auto;
+  left: 0;
+  width: 80%;
+  margin: 0 auto;
+  transition: all 400ms ease;
+}
+
+.account-bubble .text {
+  top: 50%;
+  margin: auto;
+  height: auto;
+  transform: translateY(-50%);
+  transition: none;
+  text-align: center;
+  padding-bottom: 10px;
+  max-height: 3em;
+  overflow: hidden;
+}
+
+.account-bubble.type-image > .text {
+  top: 50%;
+}
+
+.onboarding-bubble .account-bubble .bubble-text {
+  display: block;
+  white-space: normal;
+  line-height: 1.3;
+}
+
+.onboarding-bubble .account-bubble.type-image .bubble-text {
+  padding-bottom: 0;
+}
+
+.micro-caps {
+  font-size: 12px;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.micro-text {
+  font-size: 12px;
+  line-height: 1;
+}
+
+.onboarding-widget .sub-title {
+  color: #707070;
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+  font-weight: 400;
+}
+
+.h3-text {
+  font-size: 34px;
+  line-height: 1.235294117647059;
+}
+
+.onboarding-widget .widget-header {
+  text-align: center;
+  margin: 4em auto;
+  padding: 0 1em;
+  position: relative;
+}
+
+.recipe-card {
+  position: relative;
+  width: 220px;
+  margin: 8px 8px 32px;
+  outline: 0px;
+}
+
+.recipe-card .recipe-card-img-wrapper {
+  position: relative;
+  height: 0px;
+  padding-bottom: 100%;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.recipe-card .recipe-card-img-wrapper img {
+  width: auto;
+  min-width: 100%;
+  object-fit: cover;
+}
+
+.recipe-card .recipe-card-img {
+  position: absolute;
+  inset: 0px 50% auto auto;
+  transform: translateX(50%);
+  height: 100%;
+  width: 100%;
+  min-width: 100%;
+}
+
+.recipe-card .card-info-wrapper {
+  z-index: 2;
+  margin: 12px auto 6px;
+}
+
+.recipe-card .card-info {
+  flex: 1 1 0%;
+  z-index: 2;
+  max-width: 100%;
+}
+
+.primary-dark {
+  color: rgb(36, 36, 36);
+}
+
+.truncate-multi-line,
+.one-line-truncate,
+.two-line-truncate,
+.three-line-truncate,
+.four-line-truncate {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.two-line-truncate {
+  -webkit-line-clamp: 2;
+}
+
+.recipe-card .card-title {
+  width: 100%;
+  word-break: break-word;
+}
+
+.recipe-card .card-ingredients,
+.recipe-card .card-title,
+.recipe-card .review-stars,
+.recipe-card .link-overlay {
+  cursor: pointer;
+}
+
+.p2-text,
+.payment-method .card-num-cards-info .last-four,
+.payment-method .card-num-cards-info .expire-date,
+.text-input-wrapper.small-input .text-input::placeholder {
+  font-size: 16px;
+  line-height: 1.625;
+}
+
+.recipe-card .card-source {
+  display: inline-block;
+  padding: 0.5em 0.5em 0.5em 0px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-transform: uppercase;
+  transition: 400ms;
+  width: 100%;
+}
+
+.recipe-card .card-info span {
+  line-height: 1.25;
+}
+
+.recipe-card .card-source .source-link {
+  display: block;
+  width: 145px;
+}
+
+.truncate-single-line,
+.profile-banner .user-location .user-city .edit-text,
+.profile-banner .user-location .user-state .edit-text,
+.profile-banner .user-location .dropdown-title,
+.profile-banner
+  .user-info
+  .profile-text
+  .profile-row
+  .user-location
+  .user-city
+  select,
+.profile-banner
+  .user-info
+  .profile-text
+  .profile-row
+  .user-location
+  .user-state
+  select,
+.profile-banner
+  .user-info
+  .profile-text
+  .profile-row
+  .user-location
+  .user-country
+  select,
+.profile-banner
+  .user-info
+  .profile-text
+  .profile-row
+  .user-location
+  .user-city
+  .edit-text,
+.profile-banner
+  .user-info
+  .profile-text
+  .profile-row
+  .user-location
+  .user-state
+  .edit-text,
+.profile-banner
+  .user-info
+  .profile-text
+  .profile-row
+  .user-location
+  .user-country
+  .edit-text,
+.profile-banner
+  .user-info
+  .profile-text
+  .profile-row
+  .user-location
+  .user-city
+  .dropdown-title,
+.profile-banner
+  .user-info
+  .profile-text
+  .profile-row
+  .user-location
+  .user-state
+  .dropdown-title,
+.profile-banner
+  .user-info
+  .profile-text
+  .profile-row
+  .user-location
+  .user-country
+  .dropdown-title,
+.meal-plan-card .popup-wrapper .IngredientLine {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.search-opener {
+  width: 600px;
+  padding: 0px 16px;
+  line-height: 56px;
+  margin: 32px auto;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 10px,
+    rgba(0, 0, 0, 0.05) 0px 0px 1px inset;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  letter-spacing: 0px;
+  border-radius: 3em;
+  position: relative;
+  padding: 11px 24px;
+  background-color: rgb(255, 255, 255);
+}
+
+.p1-text,
+.pro-universal-cta .sticky-header-title {
+  font-size: 18px;
+  line-height: 1.66667;
+}
+
+.search-opener .placeholder-text {
+  color: rgb(46, 46, 46);
+  text-transform: none;
+  font-weight: 400;
+}
+
+.home-title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 50px auto 50px;
+  text-align: center;
+}
+
+.h4-text {
+  font-size: 24px;
+  line-height: 1.33333;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.default-bkg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 500px;
+}
+
+.home-page .onboarding-image {
+  position: absolute;
+}
+
+.home-page .fruit-bowl {
+  top: 0;
+  right: 0;
+}
+
+.home-page .strawberry-grain {
+  top: -125px;
+  left: -60px;
+}
+
+.home-page .strawberry {
+  top: 80px;
+  right: 60px;
+}
+
+.placeholder-text:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.no-recipes-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.not-found-image {
+  width: 150px;
+  height: auto;
+}
+
+.no-recipes-text {
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .search-opener {
+        width: 100%;
+        margin-top: 122px;
+        margin-bottom: 0;
+    }
+    .recipe-card {
+      width: 100%;
+      margin: 0;
+    }
+}
