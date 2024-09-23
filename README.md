@@ -39,7 +39,7 @@ The application uses a JSON server as the backend to simulate an API for data st
 
 - **1. Clone the repository** :
     ```bash
-    git clone https://github.com/yourusername/recipe-management-app.git
+    git clone https://github.com/asavant151/Recipe-Management-App.git
     cd recipe-management-app
     ```
 
