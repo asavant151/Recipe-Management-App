@@ -8,8 +8,9 @@ import RecipeForm from "./pages/Recipe/RecipeForm";
 import Navbar from "./components/Navbar/Navbar";
 import axios from "axios";
 import CuisineWiseProduct from "./pages/Recipe/CuisineWiseProduct";
+import Footer from "./components/Footer/Footer";
 
-const API_URL = 'http://localhost:5000/recipes';
+const API_URL = "http://localhost:5000/recipes";
 
 function App() {
   const [recipes, setRecipes] = useState([]);
@@ -20,7 +21,7 @@ function App() {
       const response = await axios.get(API_URL);
       setRecipes(response.data);
     } catch (error) {
-      console.error('Error fetching recipes', error);
+      console.error("Error fetching recipes", error);
     }
   };
 
@@ -34,7 +35,7 @@ function App() {
       const response = await axios.post(API_URL, newRecipe);
       setRecipes([...recipes, response.data]);
     } catch (error) {
-      console.error('Error adding recipe', error);
+      console.error("Error adding recipe", error);
     }
   };
 
@@ -48,7 +49,7 @@ function App() {
         )
       );
     } catch (error) {
-      console.error('Error updating recipe', error);
+      console.error("Error updating recipe", error);
     }
   };
 
@@ -58,7 +59,7 @@ function App() {
       await axios.delete(`${API_URL}/${id}`);
       setRecipes(recipes.filter((recipe) => recipe.id !== id));
     } catch (error) {
-      console.error('Error deleting recipe', error);
+      console.error("Error deleting recipe", error);
     }
   };
 
@@ -88,6 +89,7 @@ function App() {
             <Route path="/cuisine/:cuisine" element={<CuisineWiseProduct />} />
           </Routes>
         </div>
+        <Footer />
       </Router>
     </>
   );
